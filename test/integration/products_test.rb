@@ -7,9 +7,11 @@ class ProductsTest < ActionDispatch::IntegrationTest
 
   test "can post data to create page" do
     
-    pro = products(:one)
-    puts pro.name
-    
+    #pro = products(:one)
+    #puts pro.name
+    pro = create(:ruby_book)
+    #pro = build(:ruby_book)  不會進資料庫
+
     c1 = Product.count
     post "/products", product: {name: pro.name, price: pro.price}
     #post "/products", product: {name: "rubyruby", price: 100}  
