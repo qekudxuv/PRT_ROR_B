@@ -4,7 +4,9 @@ class ProductsController < ApplicationController
    end
 
    def create
-     @product = Product.new(params[:product])
+     # strong parameter
+     clean_param = params.require(:product).permit(:name, :price)
+     @product = Product.new(clean_param)
      if @product.save
        redirect_to '/products'
      else
