@@ -2,7 +2,7 @@
 <html>
 <head>
   <!--<title>Contact</title>-->
-  <title><%= yield :my_title || 'Happy Coding'%></title>
+  <title><%= default_title(yield :my_title) %></title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>

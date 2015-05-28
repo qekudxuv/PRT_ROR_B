@@ -43,14 +43,15 @@ group :development, :test do
   gem 'spring'
   gem 'hirb-unicode'
   gem 'better_errors'
+  
+  gem 'guard'                   # test watcher
+  gem 'guard-minitest'
 end
 
 group :test do
   gem 'minitest-reporters'
   gem 'database_cleaner'
   gem 'capybara'
-  gem 'guard'                   # test watcher
-  gem 'guard-minitest'
 
   # fixture
   gem 'factory_girl_rails'
