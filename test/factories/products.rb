@@ -14,11 +14,11 @@ FactoryGirl.define do
   #end
   
   factory :ruby_book, class: Product do
-    name "Ruby Book"
+    name Faker::Name.name
     price 100
   end
   factory :php_book, class: Product do
-    name "PHP Book"
+    name Faker::Name.name
     price 250
   end
 end

@@ -12,6 +12,8 @@ class ProductsTest < ActionDispatch::IntegrationTest
     pro = create(:ruby_book)
     #pro = build(:ruby_book)  不會進資料庫
 
+    puts pro.name
+
     c1 = Product.count
     post "/products", product: {name: pro.name, price: pro.price}
     #post "/products", product: {name: "rubyruby", price: 100}  
