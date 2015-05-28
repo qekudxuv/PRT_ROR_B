@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: PHP_book
+  price: 124
+
+two:
+  name: ASP.Net MVC
+  price: 9999
