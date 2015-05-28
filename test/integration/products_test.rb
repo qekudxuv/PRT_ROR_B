@@ -11,7 +11,8 @@ class ProductsTest < ActionDispatch::IntegrationTest
     puts pro.name
     
     c1 = Product.count
-    post "/products", product: {name: "rubyruby", price: 100}  
+    post "/products", product: {name: pro.name, price: pro.price}
+    #post "/products", product: {name: "rubyruby", price: 100}  
     assert_redirected_to "/products"
     assert_equal Product.count, c1 + 1
   end
