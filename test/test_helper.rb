@@ -9,7 +9,8 @@ Minitest::Reporters.use!
 class ActiveSupport::TestCase
   fixtures :all
   include FactoryGirl::Syntax::Methods
-  
+    
+
   #FactoryGirl.create(.....)
   #create(....)
 
