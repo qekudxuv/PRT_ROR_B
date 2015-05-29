@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
    def index
-     @product = Product.new(product_params)
+     @product = "Test"
      ProductMailer.destroy_notify(@product).deliver_now  #send mail
 
    end
