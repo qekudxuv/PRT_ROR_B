@@ -10,6 +10,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+gem 'delayed_job_active_record'
+
 # bootstrap
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
